@@ -19,6 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navBar = FDNavigationBar.appearance()
         navBar.barTintColor = UIColor.orange
         navBar.shadowImage = nil
+        
+        debugPrint(navBar.nv.height)
+        
+        // 系统的导航栏
+        let systemNaviBar = UINavigationBar.appearance()
+        systemNaviBar.barTintColor = UIColor.orange
         return true
     }
 

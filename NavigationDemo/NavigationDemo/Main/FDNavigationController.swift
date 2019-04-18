@@ -27,12 +27,12 @@ class FDNavigationController: UINavigationController {
             
             // 全局默认返回按钮
             if viewController.prefersNavigationBarStyle == .custom {
-                viewController.fd.navigationBar.contentMargin.left = 5
+                viewController.nv.navigationBar.contentMargin.left = 5
                 let backButton = UIButton()
                 backButton.setImage(UIImage(named: "nav_back_default"), for: .normal)
                 backButton.frame.size = CGSize(width: 30, height: 30)
                 backButton.addTarget(self, action: #selector(popViewControllerAnimated), for: .touchUpInside)
-                viewController.fd.navigationItem.leftBarButtonItem = FDBarButtonItem(customView: backButton)
+                viewController.nv.navigationItem.leftBarButtonItem = FDBarButtonItem(customView: backButton)
             }
         }
         

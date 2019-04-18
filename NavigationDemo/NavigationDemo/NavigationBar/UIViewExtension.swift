@@ -9,54 +9,61 @@
 import Foundation
 import UIKit
 
-extension UIView {
+
+/// A wrapper that around `fd_` properties.
+extension NVNameSpace where Base: UIView {
+    
     var left: CGFloat {
-        get { return frame.origin.x }
-        set { frame.origin.x = newValue }
+        get { return base.frame.origin.x }
+        set { base.frame.origin.x = newValue }
     }
     
     var top: CGFloat {
-        get { return frame.origin.y }
-        set { frame.origin.y = newValue }
+        get { return base.frame.origin.y }
+        set { base.frame.origin.y = newValue }
     }
     
     var right: CGFloat {
-        get { return frame.origin.x + frame.size.width }
-        set { frame.origin.x = newValue - frame.size.width }
+        get { return base.frame.origin.x + base.frame.size.width }
+        set { base.frame.origin.x = newValue - base.frame.size.width }
     }
     
     var bottom: CGFloat {
-        get { return frame.origin.y + frame.size.height }
-        set { frame.origin.y = newValue - frame.size.height }
+        get { return base.frame.origin.y + base.frame.size.height }
+        set { base.frame.origin.y = newValue - base.frame.size.height }
     }
     
     var width: CGFloat {
-        get { return frame.size.width }
-        set { frame.size.width = newValue }
+        get { return base.frame.size.width }
+        set { base.frame.size.width = newValue }
     }
     
     var height: CGFloat {
-        get { return frame.size.height }
-        set { frame.size.height = newValue }
+        get { return base.frame.size.height }
+        set { base.frame.size.height = newValue }
     }
     
     var centerX: CGFloat {
-        get { return center.x }
-        set { center = CGPoint(x: newValue, y: center.y) }
+        get { return base.center.x }
+        set { base.center = CGPoint(x: newValue, y: base.center.y) }
     }
     
     var centerY: CGFloat {
-        get { return center.y }
-        set { center = CGPoint(x: center.x, y: newValue) }
+        get { return base.center.y }
+        set { base.center = CGPoint(x: base.center.x, y: newValue) }
     }
     
     var origin: CGPoint {
-        get { return frame.origin }
-        set { frame.origin = newValue }
+        get { return base.frame.origin }
+        set { base.frame.origin = newValue }
     }
     
     var size: CGSize {
-        get { return frame.size }
-        set { frame.size = newValue }
+        get { return base.frame.size }
+        set { base.frame.size = newValue }
     }
+}
+
+extension UIView {
+
 }

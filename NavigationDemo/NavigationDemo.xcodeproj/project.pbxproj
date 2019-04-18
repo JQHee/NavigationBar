@@ -21,8 +21,8 @@
 		5EEFE0372267258800F21520 /* FDButtonBarStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE02D2267258700F21520 /* FDButtonBarStackView.swift */; };
 		5EEFE0382267258800F21520 /* FDMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE02E2267258700F21520 /* FDMargin.swift */; };
 		5EEFE0392267258800F21520 /* FDNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE02F2267258700F21520 /* FDNavigationItem.swift */; };
-		5EEFE03A2267258800F21520 /* UIViewController+FOLDin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE0302267258700F21520 /* UIViewController+FOLDin.m */; };
-		5EEFE03B2267258800F21520 /* UIViewController+FOLDin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE0312267258700F21520 /* UIViewController+FOLDin.swift */; };
+		5EEFE03A2267258800F21520 /* UIViewController+NAV.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE0302267258700F21520 /* UIViewController+NAV.m */; };
+		5EEFE03B2267258800F21520 /* UIViewController+NAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE0312267258700F21520 /* UIViewController+NAV.swift */; };
 		5EEFE03C2267258800F21520 /* FDNavigationBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE0322267258700F21520 /* FDNavigationBarContentView.swift */; };
 		5EEFE03E22672AF800F21520 /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE03D22672AF800F21520 /* NameSpace.swift */; };
 		5EEFE04022672B3800F21520 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE03F22672B3800F21520 /* UIColorExtension.swift */; };
@@ -70,10 +70,10 @@
 		5EEFE02D2267258700F21520 /* FDButtonBarStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDButtonBarStackView.swift; sourceTree = "<group>"; };
 		5EEFE02E2267258700F21520 /* FDMargin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDMargin.swift; sourceTree = "<group>"; };
 		5EEFE02F2267258700F21520 /* FDNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDNavigationItem.swift; sourceTree = "<group>"; };
-		5EEFE0302267258700F21520 /* UIViewController+FOLDin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FOLDin.m"; sourceTree = "<group>"; };
-		5EEFE0312267258700F21520 /* UIViewController+FOLDin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FOLDin.swift"; sourceTree = "<group>"; };
+		5EEFE0302267258700F21520 /* UIViewController+NAV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NAV.m"; sourceTree = "<group>"; };
+		5EEFE0312267258700F21520 /* UIViewController+NAV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NAV.swift"; sourceTree = "<group>"; };
 		5EEFE0322267258700F21520 /* FDNavigationBarContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDNavigationBarContentView.swift; sourceTree = "<group>"; };
-		5EEFE0332267258700F21520 /* UIViewController+FOLDin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FOLDin.h"; sourceTree = "<group>"; };
+		5EEFE0332267258700F21520 /* UIViewController+NAV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NAV.h"; sourceTree = "<group>"; };
 		5EEFE03D22672AF800F21520 /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
 		5EEFE03F22672B3800F21520 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5EEFE04122672B7F00F21520 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -179,9 +179,9 @@
 				5EEFE02C2267258700F21520 /* FDNavigationBar.swift */,
 				5EEFE0322267258700F21520 /* FDNavigationBarContentView.swift */,
 				5EEFE02F2267258700F21520 /* FDNavigationItem.swift */,
-				5EEFE0332267258700F21520 /* UIViewController+FOLDin.h */,
-				5EEFE0302267258700F21520 /* UIViewController+FOLDin.m */,
-				5EEFE0312267258700F21520 /* UIViewController+FOLDin.swift */,
+				5EEFE0332267258700F21520 /* UIViewController+NAV.h */,
+				5EEFE0302267258700F21520 /* UIViewController+NAV.m */,
+				5EEFE0312267258700F21520 /* UIViewController+NAV.swift */,
 				5EEFE03D22672AF800F21520 /* NameSpace.swift */,
 				5EEFE03F22672B3800F21520 /* UIColorExtension.swift */,
 				5EEFE04122672B7F00F21520 /* UIImageExtension.swift */,
@@ -329,14 +329,14 @@
 				5EEFDFFA226724EB00F21520 /* ViewController.swift in Sources */,
 				5EEFE03C2267258800F21520 /* FDNavigationBarContentView.swift in Sources */,
 				5EEFE04422672BFF00F21520 /* UIViewExtension.swift in Sources */,
-				5EEFE03A2267258800F21520 /* UIViewController+FOLDin.m in Sources */,
+				5EEFE03A2267258800F21520 /* UIViewController+NAV.m in Sources */,
 				5EEFE0362267258800F21520 /* FDNavigationBar.swift in Sources */,
 				5EEFE04222672B7F00F21520 /* UIImageExtension.swift in Sources */,
 				5EEFE0272267255900F21520 /* FDNavigationController.swift in Sources */,
 				5EEFE04622672D0200F21520 /* Test1ViewController.swift in Sources */,
 				5EEFE0342267258800F21520 /* FDBarButtonItem.swift in Sources */,
 				5EEFE03E22672AF800F21520 /* NameSpace.swift in Sources */,
-				5EEFE03B2267258800F21520 /* UIViewController+FOLDin.swift in Sources */,
+				5EEFE03B2267258800F21520 /* UIViewController+NAV.swift in Sources */,
 				5EEFDFF8226724EB00F21520 /* AppDelegate.swift in Sources */,
 				5EEFE0352267258800F21520 /* FDBarBackground.swift in Sources */,
 			);

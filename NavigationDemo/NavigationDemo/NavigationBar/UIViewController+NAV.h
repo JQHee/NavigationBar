@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class FDNavigationBar;
 @class FDNavigationItem;
 
-@interface UIViewController (FOLDin)
+@interface UIViewController (NAV)
 
 /**
  *  The navigation bar managed by the view controller.

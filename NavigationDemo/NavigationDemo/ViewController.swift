@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     override var prefersNavigationBarStyle: UINavigationBarStyle {
-        return .system
+        return .custom
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

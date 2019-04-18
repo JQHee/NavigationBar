@@ -6,7 +6,7 @@
 //  Copyright © 2019年 midland. All rights reserved.
 //
 
-public final class FOLDin<Base> {
+public final class NVNameSpace<Base> {
     /// Base object to extend.
     public let base: Base
     
@@ -19,30 +19,31 @@ public final class FOLDin<Base> {
 }
 
 /// A type that has FOLDin extensions.
-public protocol FOLDinCompatible {
+public protocol NVCompatible {
     /// Extended type
     associatedtype CompatibleType
     
-    /// FOLDin extensions.
-    static var fd: FOLDin<CompatibleType>.Type { get }
+    /// NVNameSpace extensions.
+    static var nv: NVNameSpace<CompatibleType>.Type { get }
     
-    /// FOLDin extensions.
-    var fd: FOLDin<CompatibleType> { get }
+    /// NVNameSpace extensions.
+    var nv: NVNameSpace<CompatibleType> { get }
 }
 
-extension FOLDinCompatible {
-    /// FOLDin extensions.
-    public static var fd: FOLDin<Self>.Type {
-        return FOLDin<Self>.self
+extension NVCompatible {
+    /// NVNameSpace extensions.
+    public static var nv: NVNameSpace<Self>.Type {
+        return NVNameSpace<Self>.self
     }
     
-    /// FOLDin extensions.
-    public var fd: FOLDin<Self> {
-        return FOLDin(self)
+    /// NVNameSpace extensions.
+    public var nv: NVNameSpace<Self> {
+        return NVNameSpace(self)
     }
 }
 
 import class Foundation.NSObject
 
-/// Extend NSObject with `FOLDin` proxy.
-extension NSObject: FOLDinCompatible {}
+/// Extend NSObject with `FDNameSpace` proxy.
+extension NSObject: NVCompatible {}
+

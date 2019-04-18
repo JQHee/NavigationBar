@@ -8,7 +8,8 @@
 
 #import <objc/runtime.h>
 #import "NavigationDemo-Swift.h"
-#import "UIViewController+FOLDin.h"
+#import "UIViewController+NAV.h"
+
 
 static const char kFDNavigationBarContext = '0';
 static const char kFDNavigationItemContext = '0';
@@ -17,7 +18,7 @@ static const CGFloat kFDFixedStatusBarHeight = 20.0;
 static const CGFloat kFDFixedPortraitNavigationBarHeight = 44.0;
 static const CGFloat kFDFixedLandscapeNavigationBarHeight = 32.0;
 
-@implementation UIViewController (FOLDin)
+@implementation UIViewController (NAV)
 
 #pragma mark - Properties
 
@@ -73,9 +74,18 @@ static const CGFloat kFDFixedLandscapeNavigationBarHeight = 32.0;
 - (CGFloat)fd_navbarHeight {
     UIInterfaceOrientation orientation = UIApplication.sharedApplication.statusBarOrientation;
     BOOL isPortrait = UIInterfaceOrientationIsPortrait(orientation);
-    return isPortrait ? kFDFixedPortraitNavigationBarHeight :
-    (UIApplication.sharedApplication.statusBarHidden ?
-     kFDFixedPortraitNavigationBarHeight : kFDFixedLandscapeNavigationBarHeight);
+    CGFloat navigationHeight = 0;
+    if (isPortrait) {
+        navigationHeight = kFDFixedPortraitNavigationBarHeight;
+    } else {
+        navigationHeight = kFDFixedLandscapeNavigationBarHeight;
+    }
+    return navigationHeight;
+    /*
+    CGFloat hiddenStatusBarHeight = UIApplication.sharedApplication.statusBarHidden ?
+    kFDFixedPortraitNavigationBarHeight : kFDFixedLandscapeNavigationBarHeight;
+    return isPortrait ? kFDFixedPortraitNavigationBarHeight : hiddenStatusBarHeight;
+     */
 }
 
 - (CGFloat)fd_fullNavbarHeight {

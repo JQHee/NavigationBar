@@ -34,7 +34,7 @@ extension UIViewController: UINavigationBarStyleCustomizable {
 }
 
 /// A wrapper that around `fd_` properties.
-extension FOLDin where Base: UIViewController {
+extension NVNameSpace where Base: UIViewController {
     
     /// The navigation bar managed by the view controller.
     public var navigationBar: FDNavigationBar {
